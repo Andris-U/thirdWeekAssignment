@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	height: 100%;
+	background-color: black;
+	background-size: cover;
+	font-family: 'Lato';
+}
+
+h1 {
+	font-size: 60px;
+}
+
+p {
+	font-family: 'Lato';
+	font-size: 18px;
+	font-weight: 700;
+	text-shadow: 2px 2px black;
+	color: #bcbcc8;
+}
+
+input {
+	width: 300px;
+}
+
+#bg {
+	position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../img/bg.png") center center;
+    opacity: 1.0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.main {
+	flex: 2;
+	height: auto;
+}
+
+.mainBot {
+	flex: 9;
+	height: auto;
+}
+
+.navigation {
+	flex: 2;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+	background: rgba(188,188,200,0.5);
+	background: -moz-linear-gradient(left, rgba(188,188,200,0.5) 0%, rgba(188,188,200,1) 32%, rgba(188,188,200,1) 40%, rgba(188,188,200,1) 64%, rgba(188,188,200,1) 72%, rgba(188,188,200,0.5) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(188,188,200,0.5)), color-stop(32%, rgba(188,188,200,1)), color-stop(40%, rgba(188,188,200,1)), color-stop(64%, rgba(188,188,200,1)), color-stop(72%, rgba(188,188,200,1)), color-stop(100%, rgba(188,188,200,0.5)));
+	background: -webkit-linear-gradient(left, rgba(188,188,200,0.5) 0%, rgba(188,188,200,1) 32%, rgba(188,188,200,1) 40%, rgba(188,188,200,1) 64%, rgba(188,188,200,1) 72%, rgba(188,188,200,0.5) 100%);
+	background: -o-linear-gradient(left, rgba(188,188,200,0.5) 0%, rgba(188,188,200,1) 32%, rgba(188,188,200,1) 40%, rgba(188,188,200,1) 64%, rgba(188,188,200,1) 72%, rgba(188,188,200,0.5) 100%);
+	background: -ms-linear-gradient(left, rgba(188,188,200,0.5) 0%, rgba(188,188,200,1) 32%, rgba(188,188,200,1) 40%, rgba(188,188,200,1) 64%, rgba(188,188,200,1) 72%, rgba(188,188,200,0.5) 100%);
+	background: linear-gradient(to right, rgba(188,188,200,0.5) 0%, rgba(188,188,200,1) 32%, rgba(188,188,200,1) 40%, rgba(188,188,200,1) 64%, rgba(188,188,200,1) 72%, rgba(188,188,200,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcc8', endColorstr='#bcbcc8', GradientType=1 );
+
+}
+
+.nav-box {
+	width: 10%;
+	text-align: center;
+	color: black;
+	padding: 20px 0 20px 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#portrait {
+	position: fixed;
+	height: 250px;
+	width:260px;
+	top: 23%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+#portrait img {
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+#textBox {
+	display: none;
+	position: absolute;
+	z-index: -1;
+	left: 70%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	padding: 20px;
+}
+
+#contactDiv {
+	display: none;
+}
+
+#contactForm {
+	position: absolute;
+	left: 35%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	width: 50;
+	padding: 20px;
+}
+
+#textareaId {
+	resize: both;
+	width: 300px;
+	height: 200px;
+}
+
+#coolPug {
+	display: none;
+	position: absolute;
+	resize: both;
+	width: 380px;
+	height: auto;
+	left: 20%;
+	top: 45.5%;
+}
+
+#pugMail {
+	display: none;
+	position: absolute;
+	resize: both;
+	height: auto;
+	right: 15%;
+	top: 42%;
+}
